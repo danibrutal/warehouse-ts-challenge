@@ -6,16 +6,16 @@
   "scripts": {
     "test": "jest --passWithNoTests",
     "start": "ts-node ./src/index.ts",
-    "serve": "json-server ./src/data-server/index.js",
-    "lint": "echo \"Not implemented yet\" && exit 1",
-    "lint:fix": "echo \"Not implemented yet\" && exit 1"
+    "serve": "json-server ./src/data-server/index.js --host 0.0.0.0",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/jest": "^29.5.10",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.54.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
