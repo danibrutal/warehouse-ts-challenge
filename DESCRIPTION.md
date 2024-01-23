@@ -15,6 +15,7 @@ split this differently)
 - *OrderProcessor*, which represents the worker that will process all orders from the queue
 
 Some leftovers and caveats:
+- Tests depend on json-server to be running. In production, we would want a fully independent test suite
 - Invoice management. In a production environment, I would probably handle it differently
 - Updating stock levels are not done in a transactional way
 - I tested mostly happy flows and obvious issues, but for a production code, I would
